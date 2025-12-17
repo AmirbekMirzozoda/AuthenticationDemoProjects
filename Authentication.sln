@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002.AuthenticationWithMinimalApi", "002.AuthenticationWithMinimalApi\001.AuthenticationWithMinimalApi.csproj", "{BA7C1B70-8AA3-465B-A8F1-F2916A403DFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003.AuthenticationWithMvc", "003.AuthenticationWithMvc\002.AuthenticationWithMvc.csproj", "{DA538B64-FEF4-4FDB-A91E-486035DF29A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001.AuthenticationUsingCookie", "001.AuthenticationUsingCookie\_001.AuthenticationUsingCookie.csproj", "{38AE5270-1D8F-4B7B-A940-625FCC5F5C70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA7C1B70-8AA3-465B-A8F1-F2916A403DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7C1B70-8AA3-465B-A8F1-F2916A403DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7C1B70-8AA3-465B-A8F1-F2916A403DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7C1B70-8AA3-465B-A8F1-F2916A403DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA538B64-FEF4-4FDB-A91E-486035DF29A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA538B64-FEF4-4FDB-A91E-486035DF29A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA538B64-FEF4-4FDB-A91E-486035DF29A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA538B64-FEF4-4FDB-A91E-486035DF29A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38AE5270-1D8F-4B7B-A940-625FCC5F5C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38AE5270-1D8F-4B7B-A940-625FCC5F5C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38AE5270-1D8F-4B7B-A940-625FCC5F5C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38AE5270-1D8F-4B7B-A940-625FCC5F5C70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
