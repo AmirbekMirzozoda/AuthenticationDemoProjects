@@ -35,3 +35,4 @@ C:\Users\amirbeki.mirzozoda\Documents\Lessons\csharp_course_materials-main\cours
 C:\Users\amirbeki.mirzozoda\Documents\Lessons\csharp_course_materials-main\course\week7\day1\Authentication\002.AuthenticationWithMinimalApi\obj\Debug\net8.0\001.AuthenticationWithMinimalApi.pdb
 C:\Users\amirbeki.mirzozoda\Documents\Lessons\csharp_course_materials-main\course\week7\day1\Authentication\002.AuthenticationWithMinimalApi\obj\Debug\net8.0\001.AuthenticationWithMinimalApi.genruntimeconfig.cache
 C:\Users\amirbeki.mirzozoda\Documents\Lessons\csharp_course_materials-main\course\week7\day1\Authentication\002.AuthenticationWithMinimalApi\obj\Debug\net8.0\ref\001.AuthenticationWithMinimalApi.dll
+C:\Users\amirbeki.mirzozoda\Documents\Lessons\csharp_course_materials-main\course\week7\day1\Authentication\002.AuthenticationWithMinimalApi\obj\Debug\net8.0\001.AuthenticationWithMinimalApi.sourcelink.json

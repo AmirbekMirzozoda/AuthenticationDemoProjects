@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("_001.AuthenticationUsingCookie")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43a0a253e3639a43ecf7400f8a1e76cbe5a30010")]
 [assembly: System.Reflection.AssemblyProductAttribute("_001.AuthenticationUsingCookie")]
 [assembly: System.Reflection.AssemblyTitleAttribute("_001.AuthenticationUsingCookie")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

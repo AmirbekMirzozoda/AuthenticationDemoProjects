@@ -1,11 +1,14 @@
 using System.Security.Claims;
 using _002.AuthenticationWithMvc.Dtos;
+using _002.AuthenticationWithMvc.Models.Entities;
+using _002.AuthenticationWithMvc.Services;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _002.AuthenticationWithMvc.Controllers;
 
-public class AccountController : Controller
+public class AccountController(IAccountService service, SignInManager<User> signInManager) : Controller
 {
 
     [HttpGet]
@@ -14,40 +17,38 @@ public class AccountController : Controller
         return View(new LoginDto() { ReturnUrl = returnUrl });
     }
     
+    [HttpGet]
+    public IActionResult Register()
+    {
+        return View();
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> Register(RegisterDto model)
+    {
+        var response = await service.RegisterAsync(model);
+        if (response.StatusCode == 200)
+        {
+            return RedirectToAction("Login", "Account");
+        }
+        
+        ModelState.AddModelError(string.Empty,string.Join("\n",response.Errors));
+        return View(model);
+    }
+    
     [HttpPost]
     public async Task<IActionResult> Login(LoginDto model)
     {
         if (ModelState.IsValid == false)
             return View(model);
-            
-        if (model is { Username: "user1", Password: "user1" })
+
+        var response = await service.LoginAsync(model);
+        if (response.StatusCode == 200)
         {
-            //fill claims 
-            var cliams = new List<Claim>()
-            {
-                new Claim(ClaimTypes.Name, "Alijon"),
-                new Claim(ClaimTypes.Email, "alijon@gmail.com"),
-                new Claim(ClaimTypes.Role, "Admin")
-            };
-       
-            //create identity 
-            var userIdentity = new ClaimsIdentity(cliams, "UserIdentity");
-            
-            // create principal
-            var userPrincipal = new ClaimsPrincipal(userIdentity);
-
-            await  HttpContext.SignInAsync(userPrincipal, new AuthenticationProperties
-            {
-                ExpiresUtc = DateTime.UtcNow.AddMinutes(10),
-                IsPersistent = true,
-            });
-
-            // if (model.ReturnUrl != null)
-            //     return Redirect(model.ReturnUrl);
-            //else
             return RedirectToAction("Index", "Home");
         }
-        
+
+        ModelState.AddModelError(string.Empty,string.Join("\n",response.Errors));
         return View(model);
     }
 

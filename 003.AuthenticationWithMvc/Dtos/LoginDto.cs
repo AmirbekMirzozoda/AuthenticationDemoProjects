@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace _002.AuthenticationWithMvc.Dtos;
 
 public class LoginDto
